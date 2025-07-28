@@ -1,0 +1,46 @@
+{
+    "JSON": [
+        {
+            "kitchenBarKey": "KitchenBar0",
+            "name": "기본 디캔터",
+            "description": "단순하게 기본에 충실한 디캔터",
+            "abilityInfoText": "와인 서빙 가능",
+            "reduceMakingTime": "0.05"
+        },
+        {
+            "kitchenBarKey": "KitchenBar1",
+            "name": "꽃병 디캔터",
+            "description": "꽃 대신 와인이 피어나는 디캔터",
+            "abilityInfoText": "디캔딩 속도 증가",
+            "reduceMakingTime": "0.1"
+        },
+        {
+            "kitchenBarKey": "KitchenBar2",
+            "name": "장식 디캔터",
+            "description": "맛도 같이 예뻐지는 화려한 디캔터",
+            "abilityInfoText": "디캔딩 속도 증가",
+            "reduceMakingTime": "0.15"
+        },
+        {
+            "kitchenBarKey": "KitchenBar3",
+            "name": "백조 디캔터",
+            "description": "고운 곡선처럼 와인이 부드러워지는 디캔터",
+            "abilityInfoText": "디캔딩 속도 증가",
+            "reduceMakingTime": "0.2"
+        },
+        {
+            "kitchenBarKey": "KitchenBar4",
+            "name": "스탠드 디캔터",
+            "description": "안정감도 디자인도 최고인 디캔터",
+            "abilityInfoText": "디캔딩 속도 증가",
+            "reduceMakingTime": "0.25"
+        },
+        {
+            "kitchenBarKey": "KitchenBar5",
+            "name": "크리스탈 디캔터",
+            "description": "와인 파티에 어울리는 눈부신 디캔터",
+            "abilityInfoText": "디캔딩 속도 증가",
+            "reduceMakingTime": "0.3"
+        }
+    ]
+}

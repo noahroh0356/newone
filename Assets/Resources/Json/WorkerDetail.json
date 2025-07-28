@@ -1,0 +1,34 @@
+{
+  "JSON": [
+    {
+        "key": "northpoleFox",
+        "name": "북극여우",
+        "description": "새하얀 털이 복슬복슬. 부지런하고, 화이트 와인을 좋아해요.",
+        "effect": "자동 도토리 줍기"
+    },
+    {
+        "key": "desertFox",
+        "name": "사막여우",
+        "description": "커다란 귀가 매력 포인트. 멍 때리다가도 기발한 생각을 해내요.",
+        "effect": "도토리 생성"
+    },
+    {
+        "key": "redFox",
+        "name": "붉은여우",
+        "description": "대문자 E. 친구가 참 많아 손님들이 더 북적거려요.",
+        "effect": "손님 방문 횟수 증가"
+    },
+    {
+        "key": "fireFox",
+        "name": "불여우",
+        "description": "불꽃같은 열정으로! 디캔딩을 엄청 빠르게 해줘요.",
+        "effect": "디캔딩 속도 증가"
+    },
+    {
+        "key": "tibetFox",
+        "name": "티뱃여우",
+        "description": "든든하고 시크한 여우! 진상손님, 도둑들이 깜짝 놀라요.",
+        "effect": "도둑 퇴치 시 터치 수 감소"
+    }
+  ]
+}

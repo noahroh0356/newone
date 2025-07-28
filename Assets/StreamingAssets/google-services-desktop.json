@@ -1,0 +1,31 @@
+{
+  "project_info": {
+    "project_number": "278911352460",
+    "project_id": "sourgrapesmary-f380c",
+    "storage_bucket": "sourgrapesmary-f380c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278911352460:ios:887350319518ba0ca105a9",
+        "android_client_info": {
+          "package_name": "com.iOS.COWStudio.SourGrapesMary"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6fgnji2f3PcwVVOVarBbO7Y3_QxmzYpE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

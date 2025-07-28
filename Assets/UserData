@@ -1,0 +1,39 @@
+{
+    "level": 0,
+    "exp": 0,
+    "coin": 64,
+    "ruby": 0,
+    "gatchaCoin": 0,
+    "userFurnitureList": [
+        {
+            "furniturekey": "tipbox_0",
+            "purchased": true,
+            "setup": true
+        },
+        {
+            "furniturekey": "table0_0",
+            "purchased": true,
+            "setup": true
+        }
+    ],
+    "userKitchenList": [
+        {
+            "kitchenkey": "KitchenBar0_0",
+            "purchased": true,
+            "setup": true
+        }
+    ],
+    "userCustomers": [
+        {
+            "key": "Racoon1",
+            "open": true
+        }
+    ],
+    "userFoxes": [],
+    "userWines": [
+        {
+            "key": "wine_0",
+            "open": true
+        }
+    ]
+}

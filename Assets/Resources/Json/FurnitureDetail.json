@@ -1,0 +1,46 @@
+{
+    "JSON": [
+        {
+            "key": "table0",
+            "name": "나무 테이블",
+            "description": "도토리와 잘 어울리는 소박한 테이블",
+            "autoSpawnAcon": "1",
+            "autoSpawnSec": "900"
+        },
+        {
+            "key": "table1",
+            "name": "오크 테이블",
+            "description": "묵직하고 멋진, 장인 만든 듯한 테이블",
+            "autoSpawnAcon": "1",
+            "autoSpawnSec": "720"
+        },
+        {
+            "key": "table2",
+            "name": "철제 테이블",
+            "description": "매끈매끈! 반짝반짝! 도시 감성 테이블",
+            "autoSpawnAcon": "1",
+            "autoSpawnSec": "660"
+        },
+        {
+            "key": "table3",
+            "name": "격자 테이블",
+            "description": "격자 위에 유리를 덧댄 화려한 테이블",
+            "autoSpawnAcon": "2",
+            "autoSpawnSec": "720"
+        },
+        {
+            "key": "table4",
+            "name": "유리 테이블",
+            "description": "투명하고 우아하게! 깔끔한 테이블",
+            "autoSpawnAcon": "3",
+            "autoSpawnSec": "900"
+        },
+        {
+            "key": "table5",
+            "name": "크리스탈 테이블",
+            "description": "와인과 딱 어울리는 고급 테이블",
+            "autoSpawnAcon": "4",
+            "autoSpawnSec": "900"
+        }
+    ]
+}

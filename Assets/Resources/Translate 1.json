@@ -1,0 +1,1199 @@
+{
+    "Translate": [
+        {
+            "key": "woodtable",
+            "kr": "나무 테이블",
+            "en": "Wood Table"
+        },
+        {
+            "key": "oaktable",
+            "kr": "오크 테이블",
+            "en": "Oak Table"
+        },
+        {
+            "key": "steeltable",
+            "kr": "철제 테이블",
+            "en": "Steel Table"
+        },
+        {
+            "key": "gridtable",
+            "kr": "격자 테이블",
+            "en": "Grid Table"
+        },
+        {
+            "key": "glasstable",
+            "kr": "유리 테이블",
+            "en": "Glass Table"
+        },
+        {
+            "key": "crystaltable",
+            "kr": "크리스탈 테이블",
+            "en": "Crystal Table"
+        },
+        {
+            "key": "basicdecanter",
+            "kr": "기본 디캔터",
+            "en": "Basic Decanter"
+        },
+        {
+            "key": "flowerdecanter",
+            "kr": "꽃병 디캔터",
+            "en": "Flower Decanter"
+        },
+        {
+            "key": "decordecanter",
+            "kr": "장식 디캔터",
+            "en": "Decor Decanter"
+        },
+        {
+            "key": "swandecanter",
+            "kr": "백조 디캔터",
+            "en": "Swan Decanter"
+        },
+        {
+            "key": "standdecanter",
+            "kr": "스탠드 디캔터",
+            "en": "Stand Decanter"
+        },
+        {
+            "key": "crystaldecanter",
+            "kr": "크리스탈 디캔터",
+            "en": "Crystal Decanter"
+        },
+        {
+            "key": "arcticfox",
+            "kr": "북극여우",
+            "en": "Arctic Fox"
+        },
+        {
+            "key": "fennecfox",
+            "kr": "사막여우",
+            "en": "Fennec Fox"
+        },
+        {
+            "key": "redfox",
+            "kr": "붉은여우",
+            "en": "Red Fox"
+        },
+        {
+            "key": "firefox",
+            "kr": "불여우",
+            "en": "Fire Fox"
+        },
+        {
+            "key": "tibetanfox",
+            "kr": "티뱃여우",
+            "en": "Tibetan Fox"
+        },
+        {
+            "key": "glassjar",
+            "kr": "유리병",
+            "en": "Glass Jar"
+        },
+        {
+            "key": "hat",
+            "kr": "모자",
+            "en": "Hat"
+        },
+        {
+            "key": "woodenbox",
+            "kr": "나무 상자",
+            "en": "Wooden Box"
+        },
+        {
+            "key": "plasticbox",
+            "kr": "플라스틱 상자",
+            "en": "Plastic Box"
+        },
+        {
+            "key": "tipbox",
+            "kr": "티켓박스",
+            "en": "Tip Box"
+        },
+        {
+            "key": "kiosk",
+            "kr": "키오스크",
+            "en": "Kiosk"
+        },
+        {
+            "key": "des_woodtable",
+            "kr": "도토리와 잘 어울리는 소박한 테이블",
+            "en": "A rustic table perfect for acorns"
+        },
+        {
+            "key": "des_oaktable",
+            "kr": "묵직하고 멋진, 장인 만든 듯한 테이블",
+            "en": "A heavy, stylish artisan table"
+        },
+        {
+            "key": "des_steeltable",
+            "kr": "매끈매끈! 반짝반짝! 도시 감성 테이블",
+            "en": "Glossy and shiny, a modern vibe"
+        },
+        {
+            "key": "des_gridtable",
+            "kr": "격자 위에 유리를 덧댄 화려한 테이블",
+            "en": "Fancy grid-glass hybrid table"
+        },
+        {
+            "key": "des_glasstable",
+            "kr": "투명하고 우아하게! 깔끔한 테이블",
+            "en": "Transparent and elegant table"
+        },
+        {
+            "key": "des_crystaltable",
+            "kr": "와인과 딱 어울리는 고급 테이블",
+            "en": "A classy table fit for wine"
+        },
+        {
+            "key": "des_basicdecanter",
+            "kr": "단순하게 기본에 충실한 디캔터",
+            "en": "A basic, no-frills decanter"
+        },
+        {
+            "key": "des_flowerdecanter",
+            "kr": "꽃 대신 와인이 피어나는 디캔터",
+            "en": "Wine blooms instead of flowers"
+        },
+        {
+            "key": "des_decordecanter",
+            "kr": "맛도 같이 예뻐지는 화려한 디캔터",
+            "en": "A glamorous decanter for beauty and taste"
+        },
+        {
+            "key": "des_swandecanter",
+            "kr": "고운 곡선처럼 와인이 부드러워지는 디캔터",
+            "en": "Smooth curves, smoother wine"
+        },
+        {
+            "key": "des_standdecanter",
+            "kr": "안정감도 디자인도 최고인 디캔터",
+            "en": "Stable and stylish decanter"
+        },
+        {
+            "key": "des_crystaldecanter",
+            "kr": "와인 파티에 어울리는 눈부신 디캔터",
+            "en": "A dazzling party decanter"
+        },
+        {
+            "key": "des_arcticfox",
+            "kr": "새하얀 털이 복슬복슬. 부지런하고, 화이트 와인을 좋아해요.",
+            "en": "Fluffy white fur, hardworking, loves white wine"
+        },
+        {
+            "key": "des_fennecfox",
+            "kr": "커다란 귀가 매력 포인트. 멍 때리다가도 기발한 생각을 해내요.",
+            "en": "Big ears, spaced out but full of ideas"
+        },
+        {
+            "key": "des_redfox",
+            "kr": "대문자 E. 친구가 참 많아 손님들이 더 북적거려요.",
+            "en": "Capital E! Popular and brings more guests"
+        },
+        {
+            "key": "des_firefox",
+            "kr": "불꽃같은 열정으로! 디캔딩을 엄청 빠르게 해줘요.",
+            "en": "Burning passion! Super fast decanting"
+        },
+        {
+            "key": "des_tibetanfox",
+            "kr": "든든하고 시크한 여우! 진상손님, 도둑들이 깜짝 놀라요.",
+            "en": "Cool and strong—scares off thieves"
+        },
+        {
+            "key": "des_glassjar",
+            "kr": "동전이 쌓이는 게 훤히 보이는 유리병",
+            "en": "See coins pile up through the glass"
+        },
+        {
+            "key": "des_hat",
+            "kr": "관객들의 팁을 부르는 예쁜 모자",
+            "en": "Cute hat that draws tips"
+        },
+        {
+            "key": "des_woodenbox",
+            "kr": "햄스터들이 직접 만들어본 박스",
+            "en": "Box handmade by hamsters"
+        },
+        {
+            "key": "des_plasticbox",
+            "kr": "제법 손재주가 좋은 햄스터가 만든 팁박스",
+            "en": "Well-crafted hamster-made tip box"
+        },
+        {
+            "key": "des_tipbox",
+            "kr": "밴드 멤버들이 돈을 모아 주문 제작한 박스",
+            "en": "Band-funded custom tip box"
+        },
+        {
+            "key": "des_kiosk",
+            "kr": "이제 팁도 간편하게! 팁 키오스크",
+            "en": "Easy tipping with a kiosk!"
+        },
+        {
+            "key": "eff_arcticfox",
+            "kr": "자동 도토리 줍기",
+            "en": "Auto collect acorns"
+        },
+        {
+            "key": "eff_fennecfox",
+            "kr": "도토리 생성",
+            "en": "Generates acorns"
+        },
+        {
+            "key": "eff_redfox",
+            "kr": "손님 방문 횟수 증가",
+            "en": "More guest visits"
+        },
+        {
+            "key": "eff_firefox",
+            "kr": "디캔딩 속도 증가",
+            "en": "Faster decanting"
+        },
+        {
+            "key": "eff_tibetanfox",
+            "kr": "도둑 퇴치 시 터치 수 감소",
+            "en": "Fewer taps to stop thieves"
+        },
+        {
+            "key": "but_gatcha",
+            "kr": "뽑기",
+            "en": "Gacha"
+        },
+        {
+            "key": "but_gatcha",
+            "kr": "여기여우!",
+            "en": "HeyFox!"
+        },
+        {
+            "key": "but_herefox",
+            "kr": "상점",
+            "en": "Shop"
+        },
+        {
+            "key": "nam_1sttable",
+            "kr": "첫번째 테이블",
+            "en": "1st Table"
+        },
+        {
+            "key": "nam_2ndtable",
+            "kr": "두번째 테이블",
+            "en": "2nd Table"
+        },
+        {
+            "key": "nam_3rdtable",
+            "kr": "세번째 테이블",
+            "en": "3rd Table"
+        },
+        {
+            "key": "nam_4thtable",
+            "kr": "네번째 테이블",
+            "en": "4th Table"
+        },
+        {
+            "key": "nam_5thtable",
+            "kr": "다섯번째 테이블",
+            "en": "5th Table"
+        },
+        {
+            "key": "nam_6thtable",
+            "kr": "여섯번째 테이블",
+            "en": "6th Table"
+        },
+        {
+            "key": "nam_1stdecanter",
+            "kr": "첫번째 디캔더",
+            "en": "1st Decanter"
+        },
+        {
+            "key": "nam_2nddecanter",
+            "kr": "두번째 디캔더",
+            "en": "2nd Decanter"
+        },
+        {
+            "key": "nam_3rddecanter",
+            "kr": "세번째 디캔더",
+            "en": "3rd Decanter"
+        },
+        {
+            "key": "nam_4thdecanter",
+            "kr": "네번째 디캔더",
+            "en": "4th Decanter"
+        },
+        {
+            "key": "nam_5thdecanter",
+            "kr": "다섯번째 디캔더",
+            "en": "5th Decanter"
+        },
+        {
+            "key": "nam_6thdecanter",
+            "kr": "여섯번째 디캔더",
+            "en": "6th Decanter"
+        },
+        {
+            "key": "quest_0",
+            "kr": "[상점]에서 첫번째 테이블로 나무 탁자를 구매해봐!",
+            "en": "Buy a wooden table for the first table from the [Shop]!"
+        },
+        {
+            "key": "quest_1",
+            "kr": "첫번째 디캔터로 기본 디캔더를 구매해봐!",
+            "en": "Purchase the basic decanter as the first decanter!"
+        },
+        {
+            "key": "quest_2",
+            "kr": "손님의 말풍선을 터치해 주문을 받아봐!",
+            "en": "Touch the customer's speech bubble to take their order!"
+        },
+        {
+            "key": "quest_3",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_4",
+            "kr": "두번째 테이블로 나무 탁자를 구매해봐!",
+            "en": "Buy a wooden table for the second table!"
+        },
+        {
+            "key": "quest_5",
+            "kr": "[여기여우!] 버튼을 눌러 손님을 불러봐!",
+            "en": "Press the [Here, Fox!] button to call customers!"
+        },
+        {
+            "key": "quest_6",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_7",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_8",
+            "kr": "두번째 디캔터로 기본 디캔더를 구매해봐!",
+            "en": "Purchase the basic decanter as the second decanter!"
+        },
+        {
+            "key": "quest_9",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_10",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_11",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_12",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_13",
+            "kr": "[상점]에서 북극 여우를 고용해봐!",
+            "en": "Hire an arctic fox from the [Shop]!"
+        },
+        {
+            "key": "quest_14",
+            "kr": "세번째 테이블로 나무 탁자를 구매해봐!",
+            "en": "Buy a wooden table for the third table!"
+        },
+        {
+            "key": "quest_15",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_16",
+            "kr": "세번째 디캔터로 기본 디캔더를 구매해봐!",
+            "en": "Purchase the basic decanter as the third decanter!"
+        },
+        {
+            "key": "quest_17",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_18",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_19",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_20",
+            "kr": "네번째 테이블로 나무 탁자를 구매해봐!",
+            "en": "Buy a wooden table for the fourth table!"
+        },
+        {
+            "key": "quest_21",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_22",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_23",
+            "kr": "네번째 디캔터로 기본 디캔더를 구매해봐!",
+            "en": "Purchase the basic decanter as the fourth decanter!"
+        },
+        {
+            "key": "quest_24",
+            "kr": "붉은 여우를 고용해봐!",
+            "en": "Hire a red fox!"
+        },
+        {
+            "key": "quest_25",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_26",
+            "kr": "다섯번째 테이블로 나무 탁자를 구매해봐!",
+            "en": "Buy a wooden table for the fifth table!"
+        },
+        {
+            "key": "quest_27",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_28",
+            "kr": "다섯번째 디캔터로 기본 디캔더를 구매해봐!",
+            "en": "Purchase the basic decanter as the fifth decanter!"
+        },
+        {
+            "key": "quest_29",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_30",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_31",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_32",
+            "kr": "여섯번째 테이블로 나무 탁자를 구매해봐!",
+            "en": "Buy a wooden table for the sixth table!"
+        },
+        {
+            "key": "quest_33",
+            "kr": "붉은 여우를 고용해봐!",
+            "en": "Hire a red fox!"
+        },
+        {
+            "key": "quest_34",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_35",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_36",
+            "kr": "여섯번째 디캔터로 기본 디캔더를 구매해봐!",
+            "en": "Purchase the basic decanter as the sixth decanter!"
+        },
+        {
+            "key": "quest_37",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_38",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_39",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_40",
+            "kr": "첫번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the first table!"
+        },
+        {
+            "key": "quest_41",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_42",
+            "kr": "첫번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the first decanter!"
+        },
+        {
+            "key": "quest_43",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_44",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_45",
+            "kr": "두번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the second table!"
+        },
+        {
+            "key": "quest_46",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_47",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_48",
+            "kr": "두번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the second decanter!"
+        },
+        {
+            "key": "quest_49",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_50",
+            "kr": "세번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the third table!"
+        },
+        {
+            "key": "quest_51",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_52",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_53",
+            "kr": "세번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the third decanter!"
+        },
+        {
+            "key": "quest_54",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_55",
+            "kr": "네번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the fourth table!"
+        },
+        {
+            "key": "quest_56",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_57",
+            "kr": "사막 여우를 고용해봐!",
+            "en": "Hire a fennec fox!"
+        },
+        {
+            "key": "quest_58",
+            "kr": "네번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the fourth decanter!"
+        },
+        {
+            "key": "quest_59",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_60",
+            "kr": "다섯번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the fifth table!"
+        },
+        {
+            "key": "quest_61",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_62",
+            "kr": "다섯번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the fifth decanter!"
+        },
+        {
+            "key": "quest_63",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_64",
+            "kr": "여섯번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the sixth table!"
+        },
+        {
+            "key": "quest_65",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_66",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_67",
+            "kr": "여섯번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the sixth decanter!"
+        },
+        {
+            "key": "quest_68",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_69",
+            "kr": "첫번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the first table!"
+        },
+        {
+            "key": "quest_70",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_71",
+            "kr": "첫번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the first decanter!"
+        },
+        {
+            "key": "quest_72",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_73",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_74",
+            "kr": "두번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the second table!"
+        },
+        {
+            "key": "quest_75",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_76",
+            "kr": "두번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the second decanter!"
+        },
+        {
+            "key": "quest_77",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_78",
+            "kr": "세번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the third table!"
+        },
+        {
+            "key": "quest_79",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_80",
+            "kr": "세번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the third decanter!"
+        },
+        {
+            "key": "quest_81",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_82",
+            "kr": "네번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the fourth table!"
+        },
+        {
+            "key": "quest_83",
+            "kr": "티벳 여우를 고용해봐!",
+            "en": "Hire a Tibetan fox!"
+        },
+        {
+            "key": "quest_84",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_85",
+            "kr": "네번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the fourth decanter!"
+        },
+        {
+            "key": "quest_86",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_87",
+            "kr": "다섯번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the fifth table!"
+        },
+        {
+            "key": "quest_88",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_89",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_90",
+            "kr": "다섯번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the fifth decanter!"
+        },
+        {
+            "key": "quest_91",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_92",
+            "kr": "여섯번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the sixth table!"
+        },
+        {
+            "key": "quest_93",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_94",
+            "kr": "여섯번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the sixth decanter!"
+        },
+        {
+            "key": "quest_95",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_96",
+            "kr": "첫번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the first table!"
+        },
+        {
+            "key": "quest_97",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_98",
+            "kr": "첫번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the first decanter!"
+        },
+        {
+            "key": "quest_99",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_100",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_101",
+            "kr": "두번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the second table!"
+        },
+        {
+            "key": "quest_102",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_103",
+            "kr": "두번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the second decanter!"
+        },
+        {
+            "key": "quest_104",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_105",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_106",
+            "kr": "세번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the third table!"
+        },
+        {
+            "key": "quest_107",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_108",
+            "kr": "세번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the third decanter!"
+        },
+        {
+            "key": "quest_109",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_110",
+            "kr": "네번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the fourth table!"
+        },
+        {
+            "key": "quest_111",
+            "kr": "네번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the fourth decanter!"
+        },
+        {
+            "key": "quest_112",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_113",
+            "kr": "다섯번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the fifth table!"
+        },
+        {
+            "key": "quest_114",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_115",
+            "kr": "다섯번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the fifth decanter!"
+        },
+        {
+            "key": "quest_116",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_117",
+            "kr": "여섯번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the sixth table!"
+        },
+        {
+            "key": "quest_118",
+            "kr": "여섯번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the sixth decanter!"
+        },
+        {
+            "key": "quest_119",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_120",
+            "kr": "첫번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the first table!"
+        },
+        {
+            "key": "quest_121",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_122",
+            "kr": "첫번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the first decanter!"
+        },
+        {
+            "key": "quest_123",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_124",
+            "kr": "두번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the second table!"
+        },
+        {
+            "key": "quest_125",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_126",
+            "kr": "두번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the second decanter!"
+        },
+        {
+            "key": "quest_127",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_128",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_129",
+            "kr": "세번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the third table!"
+        },
+        {
+            "key": "quest_130",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_131",
+            "kr": "세번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the third decanter!"
+        },
+        {
+            "key": "quest_132",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_133",
+            "kr": "네번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the fourth table!"
+        },
+        {
+            "key": "quest_134",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_135",
+            "kr": "네번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the fourth decanter!"
+        },
+        {
+            "key": "quest_136",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_137",
+            "kr": "다섯번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the fifth table!"
+        },
+        {
+            "key": "quest_138",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_139",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_140",
+            "kr": "다섯번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the fifth decanter!"
+        },
+        {
+            "key": "quest_141",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_142",
+            "kr": "여섯번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the sixth table!"
+        },
+        {
+            "key": "quest_143",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_144",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_145",
+            "kr": "여섯번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the sixth decanter!"
+        },
+        {
+            "key": "quest_146",
+            "kr": "불여우를 고용해봐!",
+            "en": "Hire a fire fox!"
+        },
+        {
+            "key": "quest_147",
+            "kr": "첫번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the first table!"
+        },
+        {
+            "key": "quest_148",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_149",
+            "kr": "첫번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the first decanter!"
+        },
+        {
+            "key": "quest_150",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_151",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_152",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_153",
+            "kr": "두번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the second table!"
+        },
+        {
+            "key": "quest_154",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_155",
+            "kr": "두번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the second decanter!"
+        },
+        {
+            "key": "quest_156",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_157",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_158",
+            "kr": "세번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the third table!"
+        },
+        {
+            "key": "quest_159",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_160",
+            "kr": "세번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the third decanter!"
+        },
+        {
+            "key": "quest_161",
+            "kr": "손님이 남긴 도토리를 모아봐!",
+            "en": "Collect the acorns left by customers!"
+        },
+        {
+            "key": "quest_162",
+            "kr": "네번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the fourth table!"
+        },
+        {
+            "key": "quest_163",
+            "kr": "손님들의 주문을 받아봐!",
+            "en": "Take the customers' orders!"
+        },
+        {
+            "key": "quest_164",
+            "kr": "네번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the fourth decanter!"
+        },
+        {
+            "key": "quest_165",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_166",
+            "kr": "다섯번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the fifth table!"
+        },
+        {
+            "key": "quest_167",
+            "kr": "[뽑기] 버튼을 눌러 플레이 해봐!",
+            "en": "Press the [Gacha] button to play!"
+        },
+        {
+            "key": "quest_168",
+            "kr": "다섯번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the fifth decanter!"
+        },
+        {
+            "key": "quest_169",
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
+        },
+        {
+            "key": "quest_170",
+            "kr": "여섯번째 테이블을 업그레이드해봐!",
+            "en": "Upgrade the sixth table!"
+        },
+        {
+            "key": "quest_171",
+            "kr": "여섯번째 디캔터를 업그레이드 해봐!",
+            "en": "Upgrade the sixth decanter!"
+        },
+        {
+            "key": "quest_172",
+            "kr": "도토리 천개 줍기에 도전해봐!",
+            "en": "Challenge yourself to collect a thousand acorns!"
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+using DG.Tweening;
+
+public class CoinBoard : MonoBehaviour
+{
+
+    public TMP_Text coinText;
+    public TMP_Text coinEffectText;
+    public RectTransform startPoint;
+
+    public static CoinBoard Instance;
+
+
+    void Awake()
+    {
+        Instance = this;
+    }
+
+    //public UserData userData;
+
+    private void Update()
+    {
+       UpdateCoinText();
+    }
+
+
+    public void AddedCoin(int coin)
+    {
+
+        coinEffectText.transform.DOKill(); // 이전 트윈 제거
+        coinEffectText.gameObject.SetActive(false); // 강제로 비활성화 (혹시 남아있는 상태 방지)
+
+        coinEffectText.transform.position = startPoint.position;
+        coinEffectText.text = $"+{coin}"; // ✅ + 붙이기
+
+        coinEffectText.gameObject.SetActive(true); // 다시 활성화
+
+        coinEffectText.transform.DOMove(coinEffectText.transform.position + new Vector3(0, 50, 0), 0.4f)
+            .OnKill(() => {
+                coinEffectText.gameObject.SetActive(false); // ✅ 강제 비활성화 보장
+        })
+            .OnComplete(() => {
+                coinEffectText.gameObject.SetActive(false); // ✅ 이중 방지
+        });
+        //coinEffectText.transform.position = startPoint.position;
+        //coinEffectText.gameObject.SetActive(true);
+
+        //coinEffectText.text = $"+{coin}";
+
+        ////coinEffectText.text = coin.ToString(); // 얻은 코인 값 설정
+        //coinEffectText.transform.DOKill(); // 이전에 두트윈 기능이 동작하고 있다면 꺼라
+        //coinEffectText.transform.DOMove(coinEffectText.transform.position + new Vector3(0, 50, 0), 0.4f)
+        //            .OnComplete(() => {
+        //                coinEffectText.gameObject.SetActive(false);
+        //            });
+    }
+
+
+    public void UpdateCoinText()
+    {
+        if (coinText != null)
+        {
+            coinText.text = User.Instance.userData.coin.ToString();
+        }
+        else
+        {
+            Debug.LogError("coinText가 null입니다.");
+        }
+    }
+
+}
