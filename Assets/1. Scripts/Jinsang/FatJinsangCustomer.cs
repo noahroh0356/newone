@@ -28,6 +28,12 @@ public class FatJinsangCustomer : Jinsang
         Instance = this;
     }
 
+    public void KickOut()
+    {
+        StartCoroutine(StartExitMove());
+    }
+
+
     //public void Spawn()
 
     //{

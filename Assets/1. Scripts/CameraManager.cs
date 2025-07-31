@@ -13,12 +13,15 @@ public class CameraManager : MonoBehaviour
 
     public Vector2 touchEnd;
 
-    public string currentArea = "Kitchen";
+    public string currentArea = "Restaurant";
 
 
     public static CameraManager Instance;
 
     private float targetSize;
+
+    private bool isSwiping = false; // 추가됨
+    private bool isMoving = false;  // 카메라 이동 중 상태
 
 
     public void Awake()
@@ -55,7 +58,7 @@ public class CameraManager : MonoBehaviour
 
         if (aspect < 0.8f)
         {
-            targetSize = 9.5f; // iPad 같은 4:3 비율
+            targetSize = 9.7f; // iPad 같은 4:3 비율
         }
         else
         {
@@ -65,7 +68,7 @@ public class CameraManager : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (Mathf.Abs(Camera.main.orthographicSize - targetSize) > 0.01f)
+        if (!isSwiping && !isMoving && Mathf.Abs(Camera.main.orthographicSize - targetSize) > 0.01f)
         {
             Camera.main.orthographicSize = targetSize;
         }
@@ -86,7 +89,7 @@ public class CameraManager : MonoBehaviour
             StartCoroutine(CoMoveTo(KitchenManager.Instance.center.position, areaName));
 
         }
-
+        currentArea = areaName;
     }
 
     private void Update()
@@ -94,10 +97,14 @@ public class CameraManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             touchStart = Input.mousePosition;
+            isSwiping = true; // 스와이프 시작
+
         }
         else if (Input.GetMouseButtonUp(0))
         {
             touchEnd = Input.mousePosition;
+            isSwiping = false; // 스와이프 끝
+
 
             float swipeDistanceX = touchStart.x - touchEnd.x;
 
@@ -108,7 +115,6 @@ public class CameraManager : MonoBehaviour
                     if (currentArea == "Restaurant")
                     {
                         MoveTo("Kitchen");
-                        currentArea = "Kitchen";
                     }
                 }
                 else
@@ -116,7 +122,6 @@ public class CameraManager : MonoBehaviour
                     if (currentArea == "Kitchen")
                     {
                         MoveTo("Restaurant");
-                        currentArea = "Restaurant";
                     }
                 }
             }
@@ -125,6 +130,8 @@ public class CameraManager : MonoBehaviour
 
     IEnumerator CoMoveTo(Vector2 targetPoint,string areaName)
     {
+        isMoving = true;
+
         while (true)
         {
 
@@ -137,6 +144,8 @@ public class CameraManager : MonoBehaviour
             yield return null;
         }
         cameraTr.position = targetPoint;
+        isMoving = false;
+
 
         if (areaName == "Restaurant")
         {

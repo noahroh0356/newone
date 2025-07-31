@@ -6,9 +6,13 @@ public class HelperFox : Fox
 {
     //줍기 + More Tip
     public float moveSpeed = 0.5f;
+    private Vector3 originalPosition;
+
     //Enter()에 레스토랑에 등장 + 동전을 줍기 시작
     public void Start()
     {
+        originalPosition = transform.position;
+
         StartCoroutine(CoPickUpCoin());
     }
 
@@ -45,6 +49,12 @@ public class HelperFox : Fox
             if (closestCoin == null)
             {
                 yield return new WaitForSeconds(0.5f);
+                while (Vector2.Distance(transform.position, originalPosition) > 0.05f)
+                {
+                    transform.position = Vector2.MoveTowards(transform.position, originalPosition, Time.deltaTime * moveSpeed);
+                    yield return null;
+                }
+
                 continue;
             }
 

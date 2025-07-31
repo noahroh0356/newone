@@ -48,6 +48,13 @@ public class JinsangCustomer : Jinsang
         transform.position = CustomerManager.Instance.enterance.position;
         StartCoroutine(CoStealAllCoins());
         Debug.Log("진상짓시작");
+        Invoke("KickOut", 180f);
+
+    }
+
+    public void KickOut()
+    {
+        StartCoroutine(StartExitMove());
     }
 
 

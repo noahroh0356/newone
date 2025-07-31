@@ -40,6 +40,8 @@ public class GatchaHead : MonoBehaviour
 
     public LineRenderer lineRenderer;
 
+
+
     private void Start()
     {
 

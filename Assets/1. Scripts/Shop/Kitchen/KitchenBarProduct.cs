@@ -23,17 +23,37 @@ public class KitchenBarProduct : MonoBehaviour
 
         if (!string.IsNullOrEmpty(kitchenData.nextProductKey))
         {
-            priceText.text = kitchenData.price.ToString();
+            if (kitchenData.price == 0)
+            {
+                // 시스템 언어 확인
+                if (Application.systemLanguage == SystemLanguage.Korean)
+                    priceText.text = "무료";
+                else
+                    priceText.text = "Free";
+            }
+            else
+            {
+                priceText.text = kitchenData.price.ToString();
+            }
+
             buttonTr.gameObject.SetActive(true);
-
         }
-
         else
         {
             buttonTr.gameObject.SetActive(false);
         }
+        //if (!string.IsNullOrEmpty(kitchenData.nextProductKey))
+        //{
+        //    priceText.text = kitchenData.price.ToString();
+        //    buttonTr.gameObject.SetActive(true);
 
-        //priceText.text = kitchenData.price.ToString();
+        //}
+
+        //else
+        //{
+        //    buttonTr.gameObject.SetActive(false);
+        //}
+
 
         Button button = gameObject.AddComponent<Button>();
         button.onClick.AddListener(OnClickedOpenKitchen);

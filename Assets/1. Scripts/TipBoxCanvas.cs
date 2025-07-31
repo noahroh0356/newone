@@ -22,8 +22,6 @@ public class TipBoxCanvas : MonoBehaviour
 
     public void Open(TipBoxData tipBox)
     {
-
-
         tipBoxData = tipBox;
         nameText.text = tipBoxData.name;
         descriptionText.text = tipBoxData.description;
@@ -71,7 +69,7 @@ public class TipBoxCanvas : MonoBehaviour
             MainQuestManager.Instance.DoQuest(MainQuestType.UpgradeTipBox);
 
             TipBoxManager.Instance.UpdateTipBoxVisual(nextTipBoxData.key);
-            User.Instance.AddCoin(-tipBoxData.price);
+            User.Instance.AddCoin(-nextTipBoxData.price);
 
             Open(nextTipBoxData);
 

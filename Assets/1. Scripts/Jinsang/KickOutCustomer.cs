@@ -19,6 +19,13 @@ public class KickOutCustomer : Jinsang
         transform.position = CustomerManager.Instance.enterance.position;
 
         StartCoroutine(CoJinsang());
+
+        Invoke("KickOut", 180f);
+    }
+
+    public void KickOut()
+    {
+        StartCoroutine(StartExitMove());
     }
 
 

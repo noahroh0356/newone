@@ -37,11 +37,11 @@ public class TipBoxManager : MonoBehaviour
     {
         tipBoxes = GetComponentsInChildren<TipBox>(true);
 
-        Debug.Log("TipBox 개수: " + tipBoxes.Length);
+        //Debug.Log("TipBox 개수: " + tipBoxes.Length);
 
         foreach (var tipBox in tipBoxes)
         {
-            Debug.Log($"탐지된 TipBox: {tipBox.name}, key: {tipBox.key}");
+            //Debug.Log($"탐지된 TipBox: {tipBox.name}, key: {tipBox.key}");
         }
 
         UserFurniture userFurniture = User.Instance.GetSetUpFurniture(FurniturePlace.Tipbox);
@@ -128,20 +128,20 @@ public class TipBoxManager : MonoBehaviour
 
     public TipBoxData GetTipBoxData(string key)
     {
-        Debug.Log("GetTipBoxData 호출됨. 찾으려는 key: " + key);
+        //Debug.Log("GetTipBoxData 호출됨. 찾으려는 key: " + key);
 
 
         for (int i = 0; i < tipBoxDatas.Length; i++)
         {
-            Debug.Log($"비교중: {tipBoxDatas[i].key}");
+            //Debug.Log($"비교중: {tipBoxDatas[i].key}");
 
             if (tipBoxDatas[i].key == key)
             {
-                Debug.Log("일치하는 TipBoxData 찾음");
+                //Debug.Log("일치하는 TipBoxData 찾음");
 
                 return tipBoxDatas[i];
             }
-            Debug.LogError("TipBoxData 못 찾음: " + key);
+            //Debug.LogError("TipBoxData 못 찾음: " + key);
 
         }
         return null;

@@ -7,9 +7,12 @@ public class GatchaManager : MonoBehaviour
     public GatchaBall cusGatchaPrefab;
     public GatchaBall aconGatchaPrefab;
     public GatchaBall wineGatchaPrefab;
+    public GatchaHead gatchaHead;
 
     public GameObject gachaCanvas; // 가챠 캔버스
     public Transform gachaBallParent; //  가챠볼이 생성될 부모 오브젝트
+
+    private bool canRetry = true; // 광고 보고 1회 재시도만 허용
 
 
 
@@ -34,6 +37,8 @@ public class GatchaManager : MonoBehaviour
         //User.Instance.Lv; 포도알을 모으면 소믈리에 뱃지 레벨
 
     }
+
+
 
 
     void MakeAcon()
@@ -113,7 +118,6 @@ public class GatchaManager : MonoBehaviour
         // 얘는 커스터머프리팹 리스트랑 다르게 프리팹의 종류가 다르지가 않기 때문에 가챠볼안에서 코딩으로 구분할 수 있도록 해줘야함 
 
     }
-
 
 
 

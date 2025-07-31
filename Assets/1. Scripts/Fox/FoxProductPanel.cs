@@ -21,7 +21,26 @@ public class FoxProductPanel : MonoBehaviour
         FoxManager mgr = FindObjectOfType<FoxManager>();
         foxData = mgr.GetFoxData(key);
 
-        Pricetext.text = foxData.price.ToString();
+        if (foxData.price == 0)
+        {
+            if (Application.systemLanguage == SystemLanguage.Korean)
+                Pricetext.text = "무료";
+            else
+                Pricetext.text = "Free";
+        }
+        else
+        {
+            Pricetext.text = foxData.price.ToString();
+        }
+
+            Transform buttonTr = transform.Find("**Button"); // 실제 버튼 이름 넣어야 함
+    UserFox userFox = User.Instance.GetUserFox(key);
+
+        if (userFox != null && userFox.purchased)
+        {
+            buttonTr.gameObject.SetActive(false);
+
+        }
 
         Button button = gameObject.AddComponent<Button>();
         button.onClick.AddListener(OnClickedOpenFox);
@@ -57,8 +76,7 @@ public class FoxProductPanel : MonoBehaviour
 
             //User.Instance.UpdateCoinText();
             //FoxManager.Instance.UpdateFox();
-            //PorUtext.text = "업그레이드";
-
+            PorUtext.text = "보유 중";
         }
     }
 }
