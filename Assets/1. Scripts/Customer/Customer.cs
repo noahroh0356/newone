@@ -61,6 +61,7 @@ public class Customer : MonoBehaviour
         //table.OccupyTable(); // 테이블 점유
         rm = RestaurantManager.Instance;
         StartCoroutine(CoProcessTable(table));
+        Invoke("KickOut", 180f);
     }
 
 
