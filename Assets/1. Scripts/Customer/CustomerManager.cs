@@ -68,14 +68,14 @@ public class CustomerManager : MonoBehaviour
         maxsec = newMaxSec;
         isFastEnterActive = enableFastEnter; // 어떤 강화가 활성화되었는지 상태 업데이트
 
-        if (enableFastEnter)
-        {
-            Debug.Log($"손님 등장 속도 활성화! 간격: {minsec}초 ~ {maxsec}초");
-        }
-        else
-        {
-            Debug.Log($"손님 등장 속도 비활성화 (기본)! 간격: {minsec}초 ~ {maxsec}초");
-        }
+        //if (enableFastEnter)
+        //{
+        //    Debug.Log($"손님 등장 속도 활성화! 간격: {minsec}초 ~ {maxsec}초");
+        //}
+        //else
+        //{
+        //    Debug.Log($"손님 등장 속도 비활성화 (기본)! 간격: {minsec}초 ~ {maxsec}초");
+        //}
     }
 
     public Jinsang jinsang;
