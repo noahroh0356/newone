@@ -13,6 +13,7 @@ public class GatchaManager : MonoBehaviour
     public Transform gachaBallParent; //  가챠볼이 생성될 부모 오브젝트
 
 
+
     public static GatchaManager Instance;
 
     public void Awake()
@@ -24,26 +25,14 @@ public class GatchaManager : MonoBehaviour
 
     public void StartGacha()
     {
-
-        //if (User.Instance.userData.gatchaCoin < 1)
-        //{
-        //    Debug.Log("가챠코인부족");
-        //    return;
-        //}
-        //else
-        //{
-        //    User.Instance.userData.gatchaCoin -= 1;
-        //}
-
         MainQuestManager.Instance.DoQuest(MainQuestType.PlayGatcha);
+
         MakeCustomerBall();
         MakeWineBall();
         MakeAcon();
         //User.Instance.Lv; 포도알을 모으면 소믈리에 뱃지 레벨
 
     }
-
-
 
 
     void MakeAcon()

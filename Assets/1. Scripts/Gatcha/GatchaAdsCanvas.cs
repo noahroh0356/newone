@@ -9,8 +9,9 @@ public class GatchaAdsCanvas : MonoBehaviour
 {
 
 
-    public void Init()
+    public void Awake()
     {
+        Debug.Log("awake 호출됨");  // ✅ 이 로그가 콘솔에 나오는지 확인!
         gameObject.SetActive(true);
         StartCoroutine(AutoCloseAfterDelay(5f));
 
@@ -25,50 +26,38 @@ public class GatchaAdsCanvas : MonoBehaviour
         if (gameObject.activeSelf) // 혹시 이미 닫혔는지 체크
         {
             Debug.Log("자동 5초 후 닫기 실행");
-            CloseAll();
+            OnClickedClose();
         }
     }
+
 
     public void OnClickedAds()
     {
-
+        GatchaManager.Instance.gatchaHead.ResetGatcha(); // 기존 가챠볼 제거
         AdsMgr.Instance.ShowAd(AdUnitType.RV, result =>
+    {
+        if (result)
         {
-            if (result)
-            {
-                gameObject.SetActive(false);
-                GatchaManager.Instance.RetryGatchaFromAd();
-            }
-            else
-            {
-                // ✅ 광고 강제 종료 시에도 가챠 종료
-                gameObject.SetActive(false);
-                GatchaManager.Instance.gatchaHead.EndGatcha();
-            }
-        });
-    }
-    //public void OnClickedAds()
-    //{
-    //    AdsMgr.Instance.ShowAd(AdUnitType.RV, result =>
-    //{
-    //        if (result)
-    //        {
-    //        GatchaManager.Instance.StartGacha();
-    //        gameObject.SetActive(false);
-    //    }
-    //});
+            GatchaManager.Instance.gatchaHead.hasWatchedAd = true; // ✅ 광고 시청 플래그 설정
 
-    //}
-    public  void CloseAll()
+            GatchaManager.Instance.StartGacha();
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            gameObject.SetActive(false);
+            GatchaManager.Instance.gatchaHead.EndGatcha(); // 실패 처리
+        }
+    });
+
+
+    }
+
+    public void OnClickedClose()
     {
         gameObject.SetActive(false);
-
-        if (GatchaManager.Instance != null && GatchaManager.Instance.gachaCanvas != null)
-        {
-            GatchaManager.Instance.gachaCanvas.SetActive(false);
-        }
-
         GatchaManager.Instance.gatchaHead.EndGatcha();
+
     }
 
 }

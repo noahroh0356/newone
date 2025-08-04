@@ -1,9 +1,9 @@
 {
     "level": 0,
     "exp": 0,
-    "coin": 94,
+    "coin": 119,
     "ruby": 0,
-    "gatchaCoin": 0,
+    "gatchaCoin": 72,
     "userFurnitureList": [
         {
             "furniturekey": "tipbox_0",
@@ -27,12 +27,72 @@
         {
             "key": "Racoon1",
             "open": true
+        },
+        {
+            "key": "Racoon2",
+            "open": true
+        },
+        {
+            "key": "Monkey1",
+            "open": true
+        },
+        {
+            "key": "Dog1",
+            "open": true
+        },
+        {
+            "key": "Hedgehog3",
+            "open": true
+        },
+        {
+            "key": "Hedgehog1",
+            "open": true
+        },
+        {
+            "key": "Beaver1",
+            "open": true
+        },
+        {
+            "key": "Panda1",
+            "open": true
+        },
+        {
+            "key": "Alpaca1",
+            "open": true
+        },
+        {
+            "key": "Cat1",
+            "open": true
+        },
+        {
+            "key": "Dog2",
+            "open": true
         }
     ],
     "userFoxes": [],
     "userWines": [
         {
             "key": "wine_0",
+            "open": true
+        },
+        {
+            "key": "wine_1",
+            "open": true
+        },
+        {
+            "key": "wine_2",
+            "open": true
+        },
+        {
+            "key": "wine_3",
+            "open": true
+        },
+        {
+            "key": "wine_5",
+            "open": true
+        },
+        {
+            "key": "wine_4",
             "open": true
         }
     ]
