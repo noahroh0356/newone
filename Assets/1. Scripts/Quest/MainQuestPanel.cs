@@ -88,7 +88,7 @@ public class MainQuestPanel : MonoBehaviour
     // 퀘스트 목표 달성 시 MainQuestManager에서 호출하여 패널을 '완료' 상태로 바꿉니다.
     public void SetCompletedState()
     {
-        Debug.Log("MainQuestPanel: SetCompletedState 호출됨!");
+        //Debug.Log("MainQuestPanel: SetCompletedState 호출됨!");
         titleText.text = GetTranslatedOrRaw("QuestCompleteMessage"); // "QuestCompleteMessage" 키에 맞는 번역 사용 (번역 파일에 정의 필요)
         alert.SetActive(true); // 완료 알림 활성화
         isQuestCompleted = true; // 패널 상태를 '완료됨'으로 설정

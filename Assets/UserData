@@ -1,32 +1,17 @@
 {
     "level": 0,
     "exp": 0,
-    "coin": 6,
+    "coin": 94,
     "ruby": 0,
     "gatchaCoin": 0,
     "userFurnitureList": [
         {
             "furniturekey": "tipbox_0",
             "purchased": true,
-            "setup": false
-        },
-        {
-            "furniturekey": "table0_0",
-            "purchased": true,
             "setup": true
         },
         {
-            "furniturekey": "tipbox_1",
-            "purchased": true,
-            "setup": false
-        },
-        {
-            "furniturekey": "tipbox_2",
-            "purchased": true,
-            "setup": false
-        },
-        {
-            "furniturekey": "tipbox_3",
+            "furniturekey": "table0_0",
             "purchased": true,
             "setup": true
         }
@@ -44,24 +29,7 @@
             "open": true
         }
     ],
-    "userFoxes": [
-        {
-            "key": "northpoleFox",
-            "purchased": true
-        },
-        {
-            "key": "redFox",
-            "purchased": true
-        },
-        {
-            "key": "desertFox",
-            "purchased": true
-        },
-        {
-            "key": "tibetFox",
-            "purchased": true
-        }
-    ],
+    "userFoxes": [],
     "userWines": [
         {
             "key": "wine_0",

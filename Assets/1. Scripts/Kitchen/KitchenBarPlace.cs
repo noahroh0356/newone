@@ -56,7 +56,7 @@ public class KitchenBarPlace : MonoBehaviour
             // 제작 속도 계산에 Firefox 보너스 추가
             // (1 + detail.reduceMakingTime) * foxAbilityValue는 기본 속도 증가 요인
             // 여기에 (1 + firefoxBonus)를 곱하여 추가 가속을 적용합니다.
-            timer -= Time.deltaTime * (1 + detail.reduceMakingTime) * foxAbilityValue * (1 + firefoxBonus);
+            timer -= Time.deltaTime * (1 + detail.reduceMakingTime) * foxAbilityValue * (1 + firefoxBonus) * KitchenManager.Instance.speedUp;
             curKitchenBar.wineProgressBar.fillAmount = timer / time;
         }
 

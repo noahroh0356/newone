@@ -90,6 +90,7 @@ public class CustomerManager : MonoBehaviour
         }
     }
 
+
     public void EnterCustomer()
     {
         if (waitingCustomers.Count > 5)

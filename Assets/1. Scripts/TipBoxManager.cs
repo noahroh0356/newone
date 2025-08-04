@@ -75,6 +75,8 @@ public class TipBoxManager : MonoBehaviour
         aconAmount = PlayerPrefs.GetFloat("TipBoxAcon", 0);
         string lasTimeStr = PlayerPrefs.GetString("TipBoxLastTime", null);
 
+        //PlayerPrefs 로컬에 데이터 저장하고 불러오기
+
         Debug.Log("tipboxmanager start()" + lasTimeStr);
 
 

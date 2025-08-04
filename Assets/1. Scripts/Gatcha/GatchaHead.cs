@@ -37,6 +37,7 @@ public class GatchaHead : MonoBehaviour
     public AudioSource failSound;
 
 
+    public GameObject gatchaAdsCanvas;
 
     public LineRenderer lineRenderer;
 
@@ -209,6 +210,11 @@ public class GatchaHead : MonoBehaviour
             gBall.transform.parent = null;
             gatchaBall = null;
             FailText();
+
+            yield return new WaitForSeconds(2);
+            gatchaAdsCanvas.SetActive(true);
+
+
             //Invoke("FailText", 4f);
         }
 

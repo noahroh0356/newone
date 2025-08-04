@@ -12,8 +12,13 @@ public class GatchaManager : MonoBehaviour
     public GameObject gachaCanvas; // 가챠 캔버스
     public Transform gachaBallParent; //  가챠볼이 생성될 부모 오브젝트
 
-    private bool canRetry = true; // 광고 보고 1회 재시도만 허용
 
+    public static GatchaManager Instance;
+
+    public void Awake()
+    {
+        Instance = this;
+    }
 
 
 

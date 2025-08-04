@@ -17,7 +17,24 @@ public class KitchenManager : MonoBehaviour
 
     public KitchenData[] kitchenData;
 
+
+    public float speedUp = 1;
+
+
     bool hasPurchasedKitchenBar = false; // 구매한 키친바가 있는지 여부
+
+    // 하루에 다섯 번만
+    // 하루가 지났는지, 몇번 봤는지
+    public void StartKichenBuff()
+    {
+        speedUp = 3;
+        Invoke("EndKitchenBuff", 60);
+    }
+
+    public void EndKichenBuff()
+   {
+        speedUp = 1;
+    }
 
     private void Awake()
     {
@@ -48,8 +65,53 @@ public class KitchenManager : MonoBehaviour
 
     public void Start()
     {
+        string lasTimeStr = PlayerPrefs.GetString("KitchenBuffLastTime", null);
+        int watchCount = PlayerPrefs.GetInt("KitchenBuffCount", 0);
+
+        //lasTimeStr = null일때
+        // if (DateTime.Now.Date != lastTime.Date) ㅏ참일때 기회가 5!
+        // n번 시청한 횟수가 저정되어 있어야됨 PlayerPrefs.SetString 이 함수로 처리 해야됨
+        if (string.IsNullOrEmpty(lasTimeStr) == false)
+        {
+          DateTime lastTime  =  DateTime.Parse(lasTimeStr);
+            if (DateTime.Now.Date != lastTime.Date)
+            {
+                watchCount = 0;
+                PlayerPrefs.SetInt("KitchenBuffCount", 0);
+            }
+        }
+        PlayerPrefs.SetString("KitchenBuffLastTime", DateTime.Now.ToString());
         UpdateKitchen();
     }
+
+    public void TryStartKitchenBuffWithAd()
+    {
+        if (IsAvailableToWatchAd())
+        {
+            StartKichenBuff();
+            IncrementKitchenBuffCount();
+        }
+        else
+        {
+            ToastCanvas.Instance.ShowToast("오늘은 더 이상 버프를 받을 수 없어요!");
+        }
+    }
+
+    // 오늘 광고 시청 가능 여부 확인
+    public bool IsAvailableToWatchAd()
+    {
+        int watchCount = PlayerPrefs.GetInt("KitchenBuffCount", 0);
+        return watchCount < 5;
+    }
+
+    // 시청 횟수 1 증가
+    public void IncrementKitchenBuffCount()
+    {
+        int watchCount = PlayerPrefs.GetInt("KitchenBuffCount", 0);
+        watchCount++;
+        PlayerPrefs.SetInt("KitchenBuffCount", watchCount);
+    }
+
 
 
     public void StartArea()
@@ -163,7 +225,7 @@ public class KitchenManager : MonoBehaviour
         for (int i = 0; i < kitchenBarPlaces.Length; i++)
         {
             kitchenBarPlaces[i].UpdateKitchenBarPlace();
-            Debug.Log("키친바업데이트");
+            //Debug.Log("키친바업데이트");
                 }
         // 테이블이 추가될때 settarget
     }
@@ -225,6 +287,16 @@ public class KitchenManager : MonoBehaviour
 
     }
 
+    public SpeedUpData GetSpeedUpData()
+    {
+        SpeedUpData data = new SpeedUpData();
+        data.max = 5; // 하루 최대 5회
+
+        int watchCount = PlayerPrefs.GetInt("KitchenBuffCount", 0);
+        data.leftover = Mathf.Clamp(data.max - watchCount, 0, data.max);
+
+        return data;
+    }
 }
 
 
@@ -266,4 +338,12 @@ public enum KitchenPlaceType
     KitchenBar_3,
     KitchenBar_4,
     KitchenBar_5,
+}
+
+[System.Serializable]
+public class SpeedUpData
+{
+    public int max;
+    public int leftover;
+
 }

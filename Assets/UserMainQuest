@@ -1,6 +1,6 @@
 {
-    "curQuestIndex": 3,
-    "process": 1,
-    "mainQuestType": 2,
-    "processing": false
+    "curQuestIndex": 4,
+    "process": 0,
+    "mainQuestType": 3,
+    "processing": true
 }

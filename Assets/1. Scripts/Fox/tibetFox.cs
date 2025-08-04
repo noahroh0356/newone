@@ -13,7 +13,7 @@ public class tibetFox : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            Debug.Log("티벳여우 등장!");
+            //Debug.Log("티벳여우 등장!");
         }
         else
         {

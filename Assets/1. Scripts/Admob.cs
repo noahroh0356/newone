@@ -29,7 +29,7 @@ public class AdMob : MonoBehaviour
 #endif
 
 #if UNITY_IOS
-  private string RVUnitId = "ca-app-pub-2619060223794940/7440637554"; //리워드 광고 테스트 id **진짜 ca-app-pub-2619060223794940/8240197459
+  private string RVUnitId = "ca-app-pub-2619060223794940/7440637554"; //리워드 광고 테스트 id **진짜 ca-app-pub-2619060223794940/7440637554
 #elif UNITY_ANDROID
     private string RVUnitId = "ca-app-pub-3940256099942544/5224354917"; //리워드 광고 테스트 id
 #else
