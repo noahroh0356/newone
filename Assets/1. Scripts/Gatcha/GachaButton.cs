@@ -27,6 +27,7 @@ public class GachaButton : MonoBehaviour
         }
         else
         {
+            GatchaManager.Instance.gatchaHead.hasWatchedAd = false;
             User.Instance.userData.gatchaCoin -= 1;
             activePanel.gameObject.SetActive(true);
             //gatchaHead.ResetGatcha();

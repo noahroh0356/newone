@@ -1,9 +1,9 @@
 {
     "level": 0,
     "exp": 0,
-    "coin": 119,
+    "coin": 333,
     "ruby": 0,
-    "gatchaCoin": 72,
+    "gatchaCoin": 96,
     "userFurnitureList": [
         {
             "furniturekey": "tipbox_0",
@@ -14,11 +14,21 @@
             "furniturekey": "table0_0",
             "purchased": true,
             "setup": true
+        },
+        {
+            "furniturekey": "table1_0",
+            "purchased": true,
+            "setup": true
         }
     ],
     "userKitchenList": [
         {
             "kitchenkey": "KitchenBar0_0",
+            "purchased": true,
+            "setup": true
+        },
+        {
+            "kitchenkey": "KitchenBar1_0",
             "purchased": true,
             "setup": true
         }
@@ -39,34 +49,6 @@
         {
             "key": "Dog1",
             "open": true
-        },
-        {
-            "key": "Hedgehog3",
-            "open": true
-        },
-        {
-            "key": "Hedgehog1",
-            "open": true
-        },
-        {
-            "key": "Beaver1",
-            "open": true
-        },
-        {
-            "key": "Panda1",
-            "open": true
-        },
-        {
-            "key": "Alpaca1",
-            "open": true
-        },
-        {
-            "key": "Cat1",
-            "open": true
-        },
-        {
-            "key": "Dog2",
-            "open": true
         }
     ],
     "userFoxes": [],
@@ -76,23 +58,11 @@
             "open": true
         },
         {
-            "key": "wine_1",
-            "open": true
-        },
-        {
             "key": "wine_2",
             "open": true
         },
         {
             "key": "wine_3",
-            "open": true
-        },
-        {
-            "key": "wine_5",
-            "open": true
-        },
-        {
-            "key": "wine_4",
             "open": true
         }
     ]

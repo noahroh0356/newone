@@ -6,6 +6,27 @@
             "en": "Not enough GatchaCoin!"
         },
         {
+            "key": "시청하기",
+            "kr": "시청하기",
+            "en": "Watch"
+        },
+        {
+            "key": "와인마스터 비벼",
+            "kr": "와인마스터 비벼",
+            "en": "Bevyer the WineMaster"
+        },
+        {
+            "key": "광고를 보고 한번 더 도전하시겠습니까?",
+            "kr": "광고를 보고 한번 더 도전하시겠습니까?",
+            "en": "Watch an Ad to try again?"
+        },
+        {
+            "key": "taptoshoo",
+            "kr": "나쁜 친구! 터치로 쫓아내세요!",
+            "en": "Bad guest! Tap to shoo!"
+        },
+
+        {
             "key": "needarcon",
             "kr": "도토리가 부족해요!",
             "en": "Not enough acorns!"

@@ -47,7 +47,7 @@ public class JinsangCustomer : Jinsang
         isExiting = false; // 퇴장 상태 초기화
         transform.position = CustomerManager.Instance.enterance.position;
         StartCoroutine(CoStealAllCoins());
-        Debug.Log("진상짓시작");
+        ToastCanvas.Instance.ShowToast("taptoshoo");
         Invoke("KickOut", 180f);
 
     }

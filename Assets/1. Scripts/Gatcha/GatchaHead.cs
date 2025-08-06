@@ -37,7 +37,7 @@ public class GatchaHead : MonoBehaviour
     public AudioSource failSound;
 
 
-    public GameObject gatchaAdsCanvas;
+    public GatchaAdsCanvas gatchaAdsCanvas;
 
     public LineRenderer lineRenderer;
 
@@ -46,7 +46,10 @@ public class GatchaHead : MonoBehaviour
 
     private void Start()
     {
-
+        if (gatchaAdsCanvas == null)
+        {
+            gatchaAdsCanvas = FindObjectOfType<GatchaAdsCanvas>(true); // 비활성화된 오브젝트도 포함해서 찾기
+        }
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.positionCount = 2;
         Vector3 startPos = transform.position;
@@ -178,7 +181,7 @@ public class GatchaHead : MonoBehaviour
 
                     float xGap = Mathf.Abs(gatchaBall.transform.position.x - transform.position.x); //현재 가챠 헤드와 가챠 볼의 x거?
 
-                    float pickedChance = 100 - (xGap * 150); // 곱해지는 수가 높을 수록 난이도가 상승
+                    float pickedChance = 100 - (xGap * 300); // 곱해지는 수가 높을 수록 난이도가 상승
 
                     if (pickedChance <= 10)
                     { pickedChance = 10; }
@@ -206,7 +209,7 @@ public class GatchaHead : MonoBehaviour
     {
         if (!success)
         {
-            yield return new WaitForSeconds(Random.Range(0.8f, 1.2f));
+            yield return new WaitForSeconds(Random.Range(0.6f, 0.8f));
             Debug.Log("실패했으니 떨어뜨린다");
 
             gBall.rgdy.bodyType = RigidbodyType2D.Dynamic;
@@ -215,9 +218,15 @@ public class GatchaHead : MonoBehaviour
             FailText();
 
             yield return new WaitForSeconds(1.2f);
-
-            gatchaAdsCanvas.SetActive(true); // 광고 버튼 등장
-            StartCoroutine(AutoCloseAfterDelay(5f));
+            if (GatchaManager.Instance.gatchaHead.hasWatchedAd == false)
+            {
+                gatchaAdsCanvas.Open(); // 광고 버튼 등장
+                                        //StartCoroutine(AutoCloseAfterDelay(5f));
+            }
+            else
+            {
+                EndGatcha();
+            }
 
             yield break;
         }
@@ -225,22 +234,22 @@ public class GatchaHead : MonoBehaviour
         gatchaBall.ReceiveReward();
     }
 
-    IEnumerator AutoCloseAfterDelay(float seconds)
-    {
+    //IEnumerator AutoCloseAfterDelay(float seconds)
+    //{
 
-        yield return new WaitForSeconds(seconds);
-        Debug.Log("코루틴 실행 시작");
+    //    yield return new WaitForSeconds(seconds);
+    //    Debug.Log("코루틴 실행 시작");
 
-        if (gameObject.activeSelf && GatchaManager.Instance.gatchaHead.hasWatchedAd == false)
-        {
-            Debug.Log("자동 5초 후 닫기 실행");
-            EndGatcha();
-        }
-        else
-        {
-            Debug.Log("광고 봤으므로 자동 종료 안 함");
-        }
-    }
+    //    if (gameObject.activeSelf && GatchaManager.Instance.gatchaHead.hasWatchedAd == false)
+    //    {
+    //        Debug.Log("자동 5초 후 닫기 실행");
+    //        EndGatcha();
+    //    }
+    //    else
+    //    {
+    //        Debug.Log("광고 봤으므로 자동 종료 안 함");
+    //    }
+    //}
     ////가챠 헤더가 집은 가챠볼 처리용
     //IEnumerator CoProcessGatchaBall(GatchaBall gBall, bool success)
     //{
@@ -377,7 +386,6 @@ public class GatchaHead : MonoBehaviour
 
     public void EndGatcha()
     {
-
         gatchaCanvas.gameObject.SetActive(false);
         closeButton.OnClickButton();
     }

@@ -48,7 +48,7 @@ public class KitchenBarPlace : MonoBehaviour
         //timer에 담긴 시간만큼 반복되는 코드
         while (true)
         {
-            Debug.Log("StartMake2");
+            //Debug.Log("StartMake2");
             if (timer <= 0)
                 break;
             yield return null; // 한 프레임 시간 만큼 대기

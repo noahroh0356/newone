@@ -17,6 +17,7 @@ public class KickOutCustomer : Jinsang
         touchCount = 0;
         isExiting = false; // 퇴장 상태 초기화
         transform.position = CustomerManager.Instance.enterance.position;
+        ToastCanvas.Instance.ShowToast("taptoshoo");
 
         StartCoroutine(CoJinsang());
 
@@ -31,7 +32,6 @@ public class KickOutCustomer : Jinsang
 
     IEnumerator CoJinsang()
     {
-        Debug.Log("[진상] 타겟 손님을 지속적으로 감시합니다.");
 
         while (!isExiting)
         {

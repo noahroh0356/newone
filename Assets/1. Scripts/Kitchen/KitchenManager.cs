@@ -28,14 +28,18 @@ public class KitchenManager : MonoBehaviour
     public void StartKichenBuff()
     {
         speedUp = 3;
-        Invoke("EndKitchenBuff", 60);
+        StartCoroutine(KitchenBuffTimer());
     }
 
+    private IEnumerator KitchenBuffTimer()
+    {
+        yield return new WaitForSeconds(100f);
+        EndKichenBuff();
+    }
     public void EndKichenBuff()
-   {
+    {
         speedUp = 1;
     }
-
     private void Awake()
     {
         Instance = this;

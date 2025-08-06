@@ -22,7 +22,7 @@ public class ToastCanvas : MonoBehaviour
 
         if (string.IsNullOrEmpty(translatedText))
         {
-            Debug.LogWarning($"[ToastCanvas] No translation found for key: '{key}'. Displaying raw key as toast message.");
+            //Debug.LogWarning($"[ToastCanvas] No translation found for key: '{key}'. Displaying raw key as toast message.");
             translatedText = key;
         }
 

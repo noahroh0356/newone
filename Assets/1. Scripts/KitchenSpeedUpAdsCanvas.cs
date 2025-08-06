@@ -24,7 +24,7 @@ public class KitchenSpeedUpAdsCanvas : MonoBehaviour
 
         if (speedUpData == null)
         {
-            Debug.LogWarning("SpeedUpData가 세팅되지 않았습니다.");
+            //Debug.LogWarning("SpeedUpData가 세팅되지 않았습니다.");
             return;
         }
 
@@ -46,7 +46,7 @@ public class KitchenSpeedUpAdsCanvas : MonoBehaviour
                 }
                 else
                 {
-                    Debug.LogError("Bevyer가 인스펙터에 연결되지 않았습니다.");
+                    //Debug.LogError("Bevyer가 인스펙터에 연결되지 않았습니다.");
                 }
             }
 
@@ -69,7 +69,7 @@ public class KitchenSpeedUpAdsCanvas : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Bevyer.Instance가 여전히 null입니다.");
+            //Debug.LogError("Bevyer.Instance가 여전히 null입니다.");
         }
     }
 
