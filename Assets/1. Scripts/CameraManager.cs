@@ -68,11 +68,18 @@ public class CameraManager : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (!isSwiping && !isMoving && Mathf.Abs(Camera.main.orthographicSize - targetSize) > 0.01f)
+        if (Mathf.Abs(Camera.main.orthographicSize - targetSize) > 0.01f)
         {
-            Camera.main.orthographicSize = targetSize;
+            Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, targetSize, Time.deltaTime * 5f);
         }
     }
+    //private void LateUpdate()
+    //{
+    //    if (!isSwiping && !isMoving && Mathf.Abs(Camera.main.orthographicSize - targetSize) > 0.01f)
+    //    {
+    //        Camera.main.orthographicSize = targetSize;
+    //    }
+    //}
 
 
     public void MoveTo(string areaName)
@@ -128,36 +135,68 @@ public class CameraManager : MonoBehaviour
         }
     }
 
-    IEnumerator CoMoveTo(Vector2 targetPoint,string areaName)
+    IEnumerator CoMoveTo(Vector2 targetPoint, string areaName)
     {
         isMoving = true;
+        float currentZ = cameraTr.position.z;
+
 
         while (true)
         {
-
-            if (Vector2.Distance(cameraTr.position, targetPoint) < 0.1f)
+            if (Vector2.Distance(cameraTr.position, targetPoint) < 0.01f)
             {
                 break;
             }
-            cameraTr.position = Vector2.MoveTowards(cameraTr.position, targetPoint, Time.deltaTime * 30);
 
+            cameraTr.position = Vector2.MoveTowards(cameraTr.position, targetPoint, Time.deltaTime * 30);
             yield return null;
         }
+
+        // 최종 위치 & 카메라 사이즈 강제 세팅
         cameraTr.position = targetPoint;
+        Camera.main.orthographicSize = targetSize; // ✅ 사이즈 고정
+
         isMoving = false;
 
-
+        // 영역 진입 처리
         if (areaName == "Restaurant")
         {
-            RestaurantManager.Instance.StartArea();//각 함수에 버튼 온오프 넣기
-
+            RestaurantManager.Instance.StartArea();
         }
         else if (areaName == "Kitchen")
         {
-            KitchenManager.Instance.StartArea();//각 함수에 버튼 온오프 넣기
-
+            KitchenManager.Instance.StartArea();
         }
-
     }
+    //IEnumerator CoMoveTo(Vector2 targetPoint,string areaName)
+    //{
+    //    isMoving = true;
+
+    //    while (true)
+    //    {
+
+    //        if (Vector2.Distance(cameraTr.position, targetPoint) < 0.1f)
+    //        {
+    //            break;
+    //        }
+    //        cameraTr.position = Vector2.MoveTowards(cameraTr.position, targetPoint, Time.deltaTime * 30);
+
+    //        yield return null;
+    //    }
+    //    cameraTr.position = targetPoint;
+    //    isMoving = false;
+
+
+    //    if (areaName == "Restaurant")
+    //    {
+    //        RestaurantManager.Instance.StartArea();//각 함수에 버튼 온오프 넣기
+
+    //    }
+    //    else if (areaName == "Kitchen")
+    //    {
+    //        KitchenManager.Instance.StartArea();//각 함수에 버튼 온오프 넣기
+
+    //    }
 
 }
+

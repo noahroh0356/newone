@@ -220,9 +220,9 @@
             "No": "25",
             "MainQuestType": "PurchaseFox",
             "Goal": "1",
-            "GoalString": "redFox",
-            "Title": "붉은 여우를 고용해봐!",
-            "AconReward1": "22",
+            "GoalString": "desertFox",
+            "Title": "사막 여우를 고용해봐!",
+            "AconReward1": "23",
             "GatchaCoinReward2": "0"
         },
         {
@@ -517,10 +517,11 @@
             "No": "58",
             "MainQuestType": "PurchaseFox",
             "Goal": "1",
-            "GoalString": "desertFox",
-            "Title": "사막 여우를 고용해봐!",
-            "AconReward1": "86",
-            "GatchaCoinReward2": "0"
+            "GoalString": "redFox",
+            "Title": "붉은 여우를 고용해봐!",
+            "AconReward1": "22",
+            "GatchaCoinReward2": "0",
+
         },
         {
             "No": "59",
