@@ -87,6 +87,8 @@ public class CustomerManager : MonoBehaviour
         {
             jinsang = Instantiate(jinsangPrefabs[randomIdx]);
             jinsang.Enter();
+            ToastCanvas.Instance.ShowToast("taptoshoo");
+
         }
     }
 

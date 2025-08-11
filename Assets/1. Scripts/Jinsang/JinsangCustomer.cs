@@ -47,7 +47,6 @@ public class JinsangCustomer : Jinsang
         isExiting = false; // 퇴장 상태 초기화
         transform.position = CustomerManager.Instance.enterance.position;
         StartCoroutine(CoStealAllCoins());
-        ToastCanvas.Instance.ShowToast("taptoshoo");
         Invoke("KickOut", 180f);
 
     }
@@ -60,6 +59,7 @@ public class JinsangCustomer : Jinsang
 
     IEnumerator CoStealAllCoins()
     {
+        //ToastCanvas.Instance.ShowToast("taptoshoo");
 
         while (true)
         {

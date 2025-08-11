@@ -1,9 +1,9 @@
 {
     "level": 0,
     "exp": 0,
-    "coin": 333,
+    "coin": 2734,
     "ruby": 0,
-    "gatchaCoin": 96,
+    "gatchaCoin": 0,
     "userFurnitureList": [
         {
             "furniturekey": "tipbox_0",
@@ -37,32 +37,21 @@
         {
             "key": "Racoon1",
             "open": true
-        },
-        {
-            "key": "Racoon2",
-            "open": true
-        },
-        {
-            "key": "Monkey1",
-            "open": true
-        },
-        {
-            "key": "Dog1",
-            "open": true
         }
     ],
-    "userFoxes": [],
+    "userFoxes": [
+        {
+            "key": "northpoleFox",
+            "purchased": true
+        },
+        {
+            "key": "desertFox",
+            "purchased": true
+        }
+    ],
     "userWines": [
         {
             "key": "wine_0",
-            "open": true
-        },
-        {
-            "key": "wine_2",
-            "open": true
-        },
-        {
-            "key": "wine_3",
             "open": true
         }
     ]

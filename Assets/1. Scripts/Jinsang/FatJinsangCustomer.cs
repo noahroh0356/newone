@@ -53,13 +53,13 @@ public class FatJinsangCustomer : Jinsang
         isExiting = false; // 퇴장 상태 초기화
         transform.position = CustomerManager.Instance.enterance.position;
         StartCoroutine(CoStealAllCoins());
-        ToastCanvas.Instance.ShowToast("taptoshoo");
+
     }
 
 
     IEnumerator CoStealAllCoins()
     {
-
+        //ToastCanvas.Instance.ShowToast("taptoshoo");
         while (true)
         {
             Coin[] coins = FindObjectsOfType<Coin>();

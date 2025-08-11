@@ -515,12 +515,12 @@
         },
         {
             "No": "58",
-            "MainQuestType": "PurchaseFox",
-            "Goal": "1",
-            "GoalString": "redFox",
-            "Title": "붉은 여우를 고용해봐!",
+            "MainQuestType": "CallCustomer",
+            "Goal": "12",
+            "GoalString": null,
+            "Title": "손님들을 더 불러봐!",
             "AconReward1": "22",
-            "GatchaCoinReward2": "0",
+            "GatchaCoinReward2": "0"
 
         },
         {
@@ -753,7 +753,7 @@
             "MainQuestType": "PurchaseFox",
             "Goal": "1",
             "GoalString": "tibetFox",
-            "Title": "티벳 여우를 고용해봐!",
+            "Title": "티뱃 여우를 고용해봐!",
             "AconReward1": "0",
             "GatchaCoinReward2": "1"
         },

@@ -181,7 +181,7 @@ public class GatchaHead : MonoBehaviour
 
                     float xGap = Mathf.Abs(gatchaBall.transform.position.x - transform.position.x); //현재 가챠 헤드와 가챠 볼의 x거?
 
-                    float pickedChance = 100 - (xGap * 300); // 곱해지는 수가 높을 수록 난이도가 상승
+                    float pickedChance = 100 - (xGap * 280); // 곱해지는 수가 높을 수록 난이도가 상승
 
                     if (pickedChance <= 10)
                     { pickedChance = 10; }

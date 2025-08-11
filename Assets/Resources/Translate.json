@@ -22,7 +22,7 @@
         },
         {
             "key": "taptoshoo",
-            "kr": "나쁜 친구! 터치로 쫓아내세요!",
+            "kr": "못된 친구 등장! 터치로 쫓아내세요!",
             "en": "Bad guest! Tap to shoo!"
         },
 
@@ -534,8 +534,8 @@
         },
         {
             "key": "25",
-            "kr": "붉은 여우를 고용해봐!",
-            "en": "Hire a red fox!"
+            "kr": "사막 여우를 고용해봐!",
+            "en": "Hire a fennec fox!"
         },
         {
             "key": "26",
@@ -699,8 +699,8 @@
         },
         {
             "key": "58",
-            "kr": "사막 여우를 고용해봐!",
-            "en": "Hire a fennec fox!"
+            "kr": "손님들을 더 불러봐!",
+            "en": "Call more customers!"
         },
         {
             "key": "59",
@@ -829,7 +829,7 @@
         },
         {
             "key": "84",
-            "kr": "티벳 여우를 고용해봐!",
+            "kr": "티뱃 여우를 고용해봐!",
             "en": "Hire a Tibetan fox!"
         },
         {
