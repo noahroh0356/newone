@@ -129,6 +129,19 @@ public class CustomerManager : MonoBehaviour
         }
     }
 
+    public CustomerData GetCustomerData(string key)
+    {
+        for (int i = 0; i < customerDatas.Length; i++)
+        {
+            if (customerDatas[i].key == key)
+            {
+                return customerDatas[i];
+            }
+        }
+        return null;
+
+    }
+
     public Customer FindCustomerPrefabByKey(string key)
     {
         CustomerData foundCustomerData = null;
