@@ -3,7 +3,7 @@
     "exp": 0,
     "coin": 2734,
     "ruby": 0,
-    "gatchaCoin": 0,
+    "gatchaCoin": 99,
     "userFurnitureList": [
         {
             "furniturekey": "tipbox_0",
@@ -36,6 +36,10 @@
     "userCustomers": [
         {
             "key": "Racoon1",
+            "open": true
+        },
+        {
+            "key": "Racoon2",
             "open": true
         }
     ],

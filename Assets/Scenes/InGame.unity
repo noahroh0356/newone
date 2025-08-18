@@ -114351,8 +114351,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4067159486ea94eeeaeec5f987ddfd88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _androidGameId: 5921988
-  _iosGameId: 5921989
+  _androidGameId: 5921989
+  _iosGameId: 5921988
   _androidRVId: Rewarded_Android
   _iosRVId: Rewarded_iOS
   _androidISId: Interstitial_Android

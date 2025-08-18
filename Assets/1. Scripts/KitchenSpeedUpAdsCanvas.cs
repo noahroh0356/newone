@@ -33,6 +33,7 @@ public class KitchenSpeedUpAdsCanvas : MonoBehaviour
     }
     public void OnClickedAds()
     {
+        
         AdsMgr.Instance.ShowAd(AdUnitType.RV, result =>
         {
             if (result)
