@@ -163,13 +163,13 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.CowStudio.SourGrapesMary
     Standalone: com.DefaultCompany.2DProject
-    iPhone: com.CowStudio.SourGrapesMary
+    iPhone: com.iOS.COWStudio.SourGrapesMary
   buildNumber:
     Standalone: 0
     VisionOS: 0
     iPhone: 1
     tvOS: 0
-  overrideDefaultApplicationIdentifier: 0
+  overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 23
   AndroidTargetSdkVersion: 34
@@ -187,7 +187,7 @@ PlayerSettings:
   strictShaderVariantMatching: 0
   VertexChannelCompressionMask: 4054
   iPhoneSdkVersion: 988
-  iOSTargetOSVersionString: 13.0
+  iOSTargetOSVersionString: 14.0
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
   tvOSTargetOSVersionString: 12.0
