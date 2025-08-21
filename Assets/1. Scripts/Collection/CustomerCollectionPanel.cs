@@ -1,3 +1,5 @@
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,25 +16,24 @@ public class CustomerCollectionPanel : MonoBehaviour
     public Image customerImage2;
     public Image customerImage3;
 
-
-    private void Awake()
+    public void Awake()
     {
-        collectionData = Resources.Load<CustomerCollectionData>($"CustomerColletion/{key}");
+        collectionData = Resources.Load<CustomerCollectionData>($"CustomerCollection/{key}");
 
     }
-
-    private void Start()
+    public void Start()
     {
+
         CustomerData customerData1 = CustomerManager.Instance.GetCustomerData(collectionData.customer1);
         customerImage1.sprite = customerData1.thum;
-        UserCustomer userCustomer1 =  User.Instance.GetUserCustomer(collectionData.customer1);
+        UserCustomer userCustomer1 = User.Instance.GetUserCustomer(collectionData.customer1);
 
         if (userCustomer1.open)
         {
             customerImage1.color = Color.white;
         }
         else
-        customerImage1.color = Color.grey;
+            customerImage1.color = Color.grey;
 
         CustomerData customerData2 = CustomerManager.Instance.GetCustomerData(collectionData.customer2);
         customerImage2.sprite = customerData2.thum;
@@ -55,8 +56,6 @@ public class CustomerCollectionPanel : MonoBehaviour
             customerImage3.color = Color.white;
         }
         else
-            customerImage3.color = Color.grey;
+            customerImage2.color = Color.grey;
     }
-
-
 }

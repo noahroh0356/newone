@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d1d340fe9bfb4b97a3958066645505b, type: 3}
   m_Name: 1
   m_EditorClassIdentifier: 
-  customer1: "\uC2E4\uC81C \uD0A4\uAC12"
-  customer2: customer2
-  customer3: customer3
+  customer1: Racoon1
+  customer2: Racoon2
+  customer3: Racoon3
   rewardType: 0
-  rewardValue: 100
+  rewardValue: 1000

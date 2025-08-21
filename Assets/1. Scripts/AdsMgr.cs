@@ -5,6 +5,7 @@ using UnityEngine.Advertisements;
 public class AdsMgr : MonoBehaviour, IUnityAdsInitializationListener, IUnityAdsLoadListener, IUnityAdsShowListener
 {
     public static AdsMgr Instance;
+    // private float _rvRetryDelay = 1f, _isRetryDelay = 1f;
 
     [Header("Unity Ads IDs")]
     [SerializeField] string _androidGameId = "5921988";
@@ -45,7 +46,7 @@ public class AdsMgr : MonoBehaviour, IUnityAdsInitializationListener, IUnityAdsL
     private void Start()
     {
         InitializeAds();
-        LoadBannerAd(); // 배너는 초기화 직후 자동 로드/표시 시도
+        // LoadBannerAd(); // 배너는 초기화 직후 자동 로드/표시 시도
     }
 
     public void InitializeAds()
@@ -81,6 +82,8 @@ public class AdsMgr : MonoBehaviour, IUnityAdsInitializationListener, IUnityAdsL
         // 초기 로드만 하고, Show는 사용자 요청 시에만 실행
         LoadRewardedAd();
         LoadInterstitialAd();
+        LoadBannerAd(); // ✅ 여기로 이동
+
     }
 
     public void OnInitializationFailed(UnityAdsInitializationError error, string message)
@@ -171,7 +174,7 @@ public class AdsMgr : MonoBehaviour, IUnityAdsInitializationListener, IUnityAdsL
 
         if (adUnitId.Equals(_rvAdId))
         {
-            _rvLoaded = true;
+                    _rvLoaded = true; 
             if (_wantShowRV)
             {
                 Advertisement.Show(_rvAdId, this);
@@ -179,7 +182,7 @@ public class AdsMgr : MonoBehaviour, IUnityAdsInitializationListener, IUnityAdsL
         }
         else if (adUnitId.Equals(_isAdId))
         {
-            _isLoaded = true;
+        _isLoaded = true; 
             if (_wantShowIS)
             {
                 Advertisement.Show(_isAdId, this);
@@ -187,18 +190,44 @@ public class AdsMgr : MonoBehaviour, IUnityAdsInitializationListener, IUnityAdsL
         }
     }
 
-    public void OnUnityAdsFailedToLoad(string adUnitId, UnityAdsLoadError error, string message)
-    {
-        Debug.Log($"Error loading Ad Unit {adUnitId}: {error} - {message}");
-#if UNITY_EDITOR
-        // 에디터 디버그 편의: 로드 실패 시 리워드 보상 시뮬레이션
-        if (adUnitId.Equals(_rvAdId) && _wantShowRV)
+// public void OnUnityAdsFailedToLoad(string adUnitId, UnityAdsLoadError error, string message)
+// {
+//     Debug.LogError($"[ADS][LOAD_FAIL] {adUnitId} / {error} / {message}");
+
+// #if UNITY_EDITOR
+//     if (adUnitId.Equals(_rvAdId) && _wantShowRV)
+//     {
+//         _wantShowRV = false;
+//         _rewardCallback?.Invoke(true);
+//     }
+// #else
+//     // iOS 실기기: 간단한 지수 백오프 재시도
+//     if (adUnitId.Equals(_rvAdId))
+//     {
+//         _rvLoaded = false;
+//         Invoke(nameof(LoadRewardedAd), _rvRetryDelay);
+//         _rvRetryDelay = Mathf.Min(_rvRetryDelay * 2f, 30f);
+//     }
+//     else if (adUnitId.Equals(_isAdId))
+//     {
+//         _isLoaded = false;
+//         Invoke(nameof(LoadInterstitialAd), _isRetryDelay);
+//         _isRetryDelay = Mathf.Min(_isRetryDelay * 2f, 30f);
+//     }
+// #endif
+// }
+        public void OnUnityAdsFailedToLoad(string adUnitId, UnityAdsLoadError error, string message)
         {
-            _wantShowRV = false;
-            _rewardCallback?.Invoke(true);
+            Debug.Log($"Error loading Ad Unit {adUnitId}: {error} - {message}");
+    #if UNITY_EDITOR
+            // 에디터 디버그 편의: 로드 실패 시 리워드 보상 시뮬레이션
+            if (adUnitId.Equals(_rvAdId) && _wantShowRV)
+            {
+                _wantShowRV = false;
+                _rewardCallback?.Invoke(true);
+            }
+    #endif
         }
-#endif
-    }
 
     // --- IUnityAdsShowListener ---
     public void OnUnityAdsShowStart(string adUnitId)
@@ -214,7 +243,6 @@ public class AdsMgr : MonoBehaviour, IUnityAdsInitializationListener, IUnityAdsL
             _wantShowIS = false;
         }
     }
-
     public void OnUnityAdsShowClick(string adUnitId) { }
 
     public void OnUnityAdsShowComplete(string adUnitId, UnityAdsShowCompletionState showCompletionState)
